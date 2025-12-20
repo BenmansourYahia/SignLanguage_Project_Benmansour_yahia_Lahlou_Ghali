@@ -1,0 +1,38 @@
+name: signlanguage
+description: "A real-time sign language detection Flutter application."
+
+# Prevents the package from being accidentally published to pub.dev.
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Essential for AI and Camera integration
+  camera: ^0.11.0             # To access and control device cameras
+  tflite_v2: ^1.0.0           # Optimized for running .tflite models
+  permission_handler: ^11.3.1 # Handles runtime camera permissions
+  
+  # Standard UI icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended linting for cleaner code
+  flutter_lints: ^5.0.0
+
+flutter:
+  # Enable Material Design
+  uses-material-design: true
+
+  # Register your AI assets so they are bundled with the app
+  assets:
+    - assets/model.tflite
+    - assets/labels.txt
