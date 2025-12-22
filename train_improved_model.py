@@ -18,7 +18,7 @@ import os
 TRAINING_DATA_DIR = "trainingdata"
 IMAGE_SIZE = 32
 BATCH_SIZE = 32
-EPOCHS = 20  # Increased from 10
+EPOCHS = 50  # Maximum training for best accuracy
 LEARNING_RATE = 0.001
 
 print("="*60)
